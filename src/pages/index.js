@@ -39,10 +39,10 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className={utilStyle.headingMd}>
         <p>
-          私は、Next.jsを習得中です/好きな言語はC#です。
+          私は、Next.jsを習得しました/好きなフレームワークはNext.jsです。
         </p>
       </section>
-      <section>
+      <section className={`${utilStyle.headingMd} ${utilStyle.padding1px}`}>
         <h2>📝エンジニアのブログ</h2>
         <div className={styles.grid}>
           {allPostsData.map(({ id, title, date, thumbnail }) => (
